@@ -109,6 +109,27 @@ x = str(3.14)
 x = str([1,2,3])
 ```
 
+### print()
+
+The function `print()` allows to output strings, numbers and variables to the console.
+This can be helpful for debugging and inform about the ongoing of a script.
+```python
+# string
+print('Hello World') # Hello World
+# string concat
+print('Hello', 'World') # Hello World
+# numbers
+print(42, 3.14) # 42 3.14
+# list
+print([1, 2, 3]) # [1, 2, 3]
+# dict
+print({'a':1, 'b':2, 'c':3}) # {'a':1, 'b':2, 'c':3}
+# variables
+x = 3.14
+s = "Hello World"
+print(s, x) # Hello World 3.14
+```
+
 ### Python & Math
 
 Let's have a deeper look into the mathematics operations and the [In-Build math](https://docs.python.org/3/library/math.html) module.
@@ -233,8 +254,8 @@ length = len(l) # length = 4
 # access at index
 l = [1, 2, 3] # or use range(3)
 a1 = l[0] # a1 = 1
-a2 = l[1] # a1 = 2
-a3 = l[2] # a1 = 3
+a2 = l[1] # a2 = 2
+a3 = l[2] # a3 = 3
 # overwrite at index
 l[1] = 0 # l = [1, 0, 3]
 # append to list
@@ -261,7 +282,40 @@ More information can be found in the documentation at [More on Lists](https://do
 
 ### Dictionary
 
-TODO
+Another useful data type built into python is the [dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries).
+Dictionary are ordered by keys and allows a key and value association.
+Deeper information can be found in the python documentation at [Dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries).
+Let's get working with dictionary:
+```python
+# define
+d = {1:'a', 2:'b', 3:'c'}
+d = {'a':1, 'b':2, 'c':3}
+# nested
+d = {
+    'a': [1, 2, 3],
+    'b': [4, 5, 6],
+    'c': {
+        'f': 42
+    }
+}
+# item count of dict
+d = {'a':1, 'b':2, 'c':3}
+l = len(d) # l = 3
+# access via the keys
+v1 = d['a'] # v1 = 1
+v2 = d['b'] # v2 = 2
+v3 = d['c'] # v3 = 3
+# add a new key and value pair
+d['d'] = 4 # {'a':1, 'b':2, 'c':3, 'd':4}
+# remove a key and value pair
+del d['b'] # d = {'a':1, 'c':3}
+# check if key in dict
+x = 'a' in d # x = True
+x = 'z' in d # x = False
+# use for to get key and value pairs
+for k, v in d.items():
+    print(k, v)
+```
 
 ## Usage `scsv`
 
