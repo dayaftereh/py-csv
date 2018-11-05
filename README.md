@@ -220,7 +220,44 @@ for w in words:
 
 ### List
 
-TODO
+The list is a important and inbuild type in python.
+However, the easiest way is to get familiar with `list`, checkout the following usages:
+```python
+# define list
+l = [1, 2, 3]
+l = ['a', 'b', 'c']
+l = ["cat", "world", "hello"]
+# length of a list
+l = [1, 2, 3, 4]
+length = len(l) # length = 4
+# access at index
+l = [1, 2, 3] # or use range(3)
+a1 = l[0] # a1 = 1
+a2 = l[1] # a1 = 2
+a3 = l[2] # a1 = 3
+# overwrite at index
+l[1] = 0 # l = [1, 0, 3]
+# append to list
+l = [1, 2, 3] 
+l.append(4) # l = [1, 2, 3, 4]
+# remove element from list
+l = [1, 2, 3] 
+l.remove(2) # l = [1, 3]
+# check if value in list
+l = range(3) # l = [1, 2, 3,]
+x = 2 in l # x = True
+x = 4 in l # x = False
+# use for
+l = [1, 2, 3]
+for n in l:
+    print(n)
+# usage range and for
+length = 10
+for i in range(length):
+    print(i)
+```
+
+More information can be found in the documentation at [More on Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists).
 
 ### Dictionary
 
